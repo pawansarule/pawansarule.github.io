@@ -10,9 +10,12 @@
     <meta name="author" content="Pawan Sarule" />
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="BDP8wRlPEEtb8yZ8ewy-ZrYsYKIyZIGvjsWzg7ebtxY" />
+    <link rel="canonical" href="https://pawansarule.github.io/">
+
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://pawansarule.github.io/sitemap.xml" />
 
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
@@ -56,6 +59,31 @@
 
   gtag('config', 'G-KTM695G22N');
 </script>
+
+    <script>
+  // Track certification clicks
+  document.querySelectorAll('.cert-list a').forEach(link => {
+    link.addEventListener('click', function () {
+      gtag('event', 'cert_link_click', {
+        'event_category': 'Certification',
+        'event_label': this.href,
+        'transport_type': 'beacon'
+      });
+    });
+  });
+
+  // Track social clicks
+  document.querySelectorAll('a[href*="linkedin.com"], a[href*="github.com"], a[href*="instagram.com"]').forEach(link => {
+    link.addEventListener('click', function () {
+      gtag('event', 'social_click', {
+        'event_category': 'Social Link',
+        'event_label': this.href,
+        'transport_type': 'beacon'
+      });
+    });
+  });
+</script>
+
 </head>
 
 <body class="is-preload">
