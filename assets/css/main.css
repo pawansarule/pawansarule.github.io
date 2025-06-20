@@ -68,6 +68,17 @@ input, select, textarea {
 	appearance: none;
 }
 
+.cert-list {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.cert-list li {
+    margin: 0.5em 0;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
