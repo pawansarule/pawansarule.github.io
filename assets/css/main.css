@@ -29,6 +29,46 @@ body {
 	line-height: 1;
 }
 
+/* Academic Projects Gallery */
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.project-item {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .project-item {
+    width: 80%;
+  }
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -78,45 +118,6 @@ input, select, textarea {
     margin: 0.5em 0;
 }
 
-/* Academic Projects Gallery */
-.project-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px 0;
-}
-
-.project-item {
-  width: 250px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  object-fit: contain;
-}
-
-/* Responsive behavior */
-@media (max-width: 768px) {
-  .project-item {
-    width: 80%;
-  }
-}
 
 
 /* Basic */
