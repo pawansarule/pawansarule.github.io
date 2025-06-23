@@ -2481,13 +2481,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-				margin-top: 0;
-			}
-
-			.features li > :last-child {
-				margin-bottom: 0;
-			}
+			
 
 		@media screen and (max-width: 980px) {
 
