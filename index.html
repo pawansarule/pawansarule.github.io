@@ -17,6 +17,9 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://pawansarule.github.io/sitemap.xml" />
 
+    <!-- AOS Library CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
@@ -48,6 +51,17 @@
       "jobTitle": "Software Developer",
       "description": "Official portfolio website of Pawan Sarule"
     }
+    </script>
+
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      });
     </script>
 
     <!-- Google tag (gtag.js) -->
@@ -144,134 +158,144 @@
 
 <!-- Projects Section -->
 <section id="first" class="main special">
-  <header class="major">
-    <h2>Academic Projects</h2>
-  </header>
-  <ul class="features project-gallery">
-    
-    <li class="project-item">
-      <a href="https://pawansarule.github.io" target="_blank">
-        <img src="assets/images/portfolio.png" alt="Portfolio Project" class="project-image" />
-        <h3>Portfolio</h3>
-        <p>My personal portfolio showcasing my projects and skills.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://pawansarule.github.io/The-Vintage-Emporium" target="_blank">
-        <img src="assets/images/vintage-emporium.png" alt="The Vintage Emporium" class="project-image" />
-        <h3>The Vintage Emporium</h3>
-        <p>A web application for vintage product browsing and shopping.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://pawansarule.github.io" target="_blank">
-        <img src="assets/images/food exploria.png" alt="Food Exploria" class="project-image" />
-        <h3>Food Exploria</h3>
-        <p>A food delivery web application built using modern web technologies.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://grillirestaurant-pawansarule.vercel.app" target="_blank">
-        <img src="assets/images/Grilli Restaurant.png" alt="Grilli Restaurant" class="project-image" />
-        <h3>Grilli Restaurant</h3>
-        <p>A web application for restaurant services and online ordering.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://flakes-pawansarule.vercel.app" target="_blank">
-        <img src="assets/images/flakes.png" alt="Flakes" class="project-image" />
-        <h3>Flakes</h3>
-        <p>A movie-themed web application showcasing latest releases.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://anon-pawansarule.vercel.app" target="_blank">
-        <img src="assets/images/Anon.png" alt="Anon" class="project-image" />
-        <h3>Anon</h3>
-        <p>An e-commerce platform for a variety of products.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://casmart-pawansarule.vercel.app" target="_blank">
-        <img src="assets/images/casmart.png" alt="Casmart" class="project-image" />
-        <h3>Casmart</h3>
-        <p>A web-based e-commerce application for online shopping.</p>
-      </a>
-    </li>
-    
-    <li class="project-item">
-      <a href="https://sneakers-pawansarule.vercel.app" target="_blank">
-        <img src="assets/images/sneakers.png" alt="Sneakers" class="project-image" />
-        <h3>Sneakers</h3>
-        <p>A product showcase website focused on sneakers and footwear.</p>
-      </a>
-    </li>
+        <header class="major">
+          <h2>Academic Projects</h2>
+        </header>
+        <ul class="features project-gallery">
 
-  </ul>
-</section>
-            <!-- Skills Section -->
-            <section id="second" class="main special">
-                <header class="major">
-                <h2>Skills</h2>
-                </header>
-                <div class="skills-grid">
-                  <div class="skill-card">Java</div>
-                  <div class="skill-card">C#.NET</div>
-                  <div class="skill-card">MySQL</div>
-                  <div class="skill-card">SpringBoot</div>
-                  <div class="skill-card">AWS</div>
-                  <div class="skill-card">HTML</div>
-                  <div class="skill-card">CSS</div>
-                  <div class="skill-card">JavaScript</div>
-                  <div class="skill-card">Bootstrap</div>
-                  <div class="skill-card">ReactJS</div>
-                  <div class="skill-card">Python</div>
-                  <div class="skill-card">C</div>
-                  <div class="skill-card">C++</div>
-                  <div class="skill-card">Linux</div>
-                  <div class="skill-card">Oracle</div>
-                </div>
-              </section>
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://pawansarule.github.io" target="_blank">
+              <img src="assets/images/portfolio.png" alt="Portfolio Project" class="project-image" />
+              <h3>Portfolio</h3>
+              <p>My personal portfolio showcasing my projects and skills.</p>
+            </a>
+          </li>
 
-            <!-- Education & Certifications -->
-                <section id="cta" class="main special education-section">
-                  <header class="major">
-                    <h2 class="section-title">Education</h2>
-                  </header>
-                  <div class="education-container">
-                    <div class="education-card">
-                      <h3>Dr. D.Y. Patil ACS College, Pimpri, Pune</h3>
-                      <p>BCA(Science)</p>
-                      <span class="edu-year">2020 - 2023</span>
-                    </div>
-                    <div class="education-card">
-                      <h3>Asian College Of Science & Commerce, Pune</h3>
-                      <p>MSC(CA)</p>
-                      <span class="edu-year">2023 - 2025</span>
-                    </div>
-                  </div>
-                </section>
-          
-                <section id="cert" class="main special">
-                <header class="major">
-                    <h2>Certifications</h2>
-                </header>
-                <ul class="cert-list">
-                    <li><img src="assets/images/Cert/AWS.png" alt="AWS" class="cert-icon"><a href="https://www.credly.com/go/zh7UpOSS9JVtYC47ebbnfg" target="_blank">AWS Certified Cloud Practitioner</a></li>
-                    <li><img src="assets/images/Cert/Linux-Foundation.png" alt="AWS" class="cert-icon"><a href="https://www.coursera.org/verify/AY58GEJBUGMJ" target="_blank">Linux for Developers</a></li>
-                    <li><img src="assets/images/Cert/dukesquare_blue.png" alt="AWS" class="cert-icon"><a href="https://www.coursera.org/verify/EYPGKSJLLFPK" target="_blank">Programming Foundations</a></li>
-                    <li><img src="assets/images/Cert/UoL-Logo_180x180.png" alt="AWS" class="cert-icon"><a href="https://www.coursera.org/verify/PGFKKFVNBN7K" target="_blank">Responsive Website Basics</a></li>
-                    <li><img src="assets/images/Cert/FB-GoldM-maroon.png" alt="AWS" class="cert-icon"><a href="https://coursera.org/share/06788c26d7107bf4f1d9f31c28a5d2ad" target="_blank">Creative Problem Solving</a></li>
-                </ul>
-            </section>
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://pawansarule.github.io/The-Vintage-Emporium" target="_blank">
+              <img src="assets/images/vintage-emporium.png" alt="The Vintage Emporium" class="project-image" />
+              <h3>The Vintage Emporium</h3>
+              <p>A web application for vintage product browsing and shopping.</p>
+            </a>
+          </li>
 
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://pawansarule.github.io" target="_blank">
+              <img src="assets/images/food exploria.png" alt="Food Exploria" class="project-image" />
+              <h3>Food Exploria</h3>
+              <p>A food delivery web application built using modern web technologies.</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://grillirestaurant-pawansarule.vercel.app" target="_blank">
+              <img src="assets/images/Grilli Restaurant.png" alt="Grilli Restaurant" class="project-image" />
+              <h3>Grilli Restaurant</h3>
+              <p>A web application for restaurant services and online ordering.</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://flakes-pawansarule.vercel.app" target="_blank">
+              <img src="assets/images/flakes.png" alt="Flakes" class="project-image" />
+              <h3>Flakes</h3>
+              <p>A movie-themed web application showcasing latest releases.</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://anon-pawansarule.vercel.app" target="_blank">
+              <img src="assets/images/Anon.png" alt="Anon" class="project-image" />
+              <h3>Anon</h3>
+              <p>An e-commerce platform for a variety of products.</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://casmart-pawansarule.vercel.app" target="_blank">
+              <img src="assets/images/casmart.png" alt="Casmart" class="project-image" />
+              <h3>Casmart</h3>
+              <p>A web-based e-commerce application for online shopping.</p>
+            </a>
+          </li>
+
+          <li class="project-item" data-aos="zoom-in">
+            <a href="https://sneakers-pawansarule.vercel.app" target="_blank">
+              <img src="assets/images/sneakers.png" alt="Sneakers" class="project-image" />
+              <h3>Sneakers</h3>
+              <p>A product showcase website focused on sneakers and footwear.</p>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+      <section id="second" class="main special">
+        <header class="major">
+          <h2>Skills</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up">Java</div>
+          <div class="skill-card" data-aos="fade-up">C#.NET</div>
+          <div class="skill-card" data-aos="fade-up">MySQL</div>
+          <div class="skill-card" data-aos="fade-up">SpringBoot</div>
+          <div class="skill-card" data-aos="fade-up">AWS</div>
+          <div class="skill-card" data-aos="fade-up">HTML</div>
+          <div class="skill-card" data-aos="fade-up">CSS</div>
+          <div class="skill-card" data-aos="fade-up">JavaScript</div>
+          <div class="skill-card" data-aos="fade-up">Bootstrap</div>
+          <div class="skill-card" data-aos="fade-up">ReactJS</div>
+          <div class="skill-card" data-aos="fade-up">Python</div>
+          <div class="skill-card" data-aos="fade-up">C</div>
+          <div class="skill-card" data-aos="fade-up">C++</div>
+          <div class="skill-card" data-aos="fade-up">Linux</div>
+          <div class="skill-card" data-aos="fade-up">Oracle</div>
         </div>
+      </section>
+
+
+
+      <section id="cta" class="main special education-section">
+        <header class="major">
+          <h2 class="section-title">Education</h2>
+        </header>
+        <div class="education-container">
+          <div class="education-card" data-aos="zoom-in">
+            <h3>Dr. D.Y. Patil ACS College, Pimpri, Pune</h3>
+            <p>BCA(Science)</p>
+            <span class="edu-year">2020 - 2023</span>
+          </div>
+          <div class="education-card" data-aos="zoom-in">
+            <h3>Asian College Of Science & Commerce, Pune</h3>
+            <p>MSC(CA)</p>
+            <span class="edu-year">2023 - 2025</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="cert" class="main special">
+        <header class="major">
+          <h2>Certifications</h2>
+        </header>
+        <ul class="cert-list">
+          <li data-aos="fade-up"><img src="assets/images/Cert/AWS.png" alt="AWS" class="cert-icon"><a
+              href="https://www.credly.com/go/zh7UpOSS9JVtYC47ebbnfg" target="_blank">AWS Certified Cloud
+              Practitioner</a></li>
+          <li data-aos="fade-up"><img src="assets/images/Cert/Linux-Foundation.png" alt="Linux" class="cert-icon"><a
+              href="https://www.coursera.org/verify/AY58GEJBUGMJ" target="_blank">Linux for Developers</a></li>
+          <li data-aos="fade-up"><img src="assets/images/Cert/dukesquare_blue.png" alt="Programming"
+              class="cert-icon"><a href="https://www.coursera.org/verify/EYPGKSJLLFPK" target="_blank">Programming
+              Foundations</a></li>
+          <li data-aos="fade-up"><img src="assets/images/Cert/UoL-Logo_180x180.png" alt="Responsive"
+              class="cert-icon"><a href="https://www.coursera.org/verify/PGFKKFVNBN7K" target="_blank">Responsive
+              Website Basics</a></li>
+          <li data-aos="fade-up"><img src="assets/images/Cert/FB-GoldM-maroon.png" alt="Creative" class="cert-icon"><a
+              href="https://coursera.org/share/06788c26d7107bf4f1d9f31c28a5d2ad" target="_blank">Creative Problem
+              Solving</a></li>
+        </ul>
+      </section>
+    </div>
 
         <!-- Footer -->
         <footer id="footer" style="text-align: center; padding: 20px 0; position: relative; bottom: 0; width: 100%;">
