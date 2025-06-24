@@ -29,6 +29,10 @@ body {
 	line-height: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .education-section {
   padding: 4em 2em;
   text-align: center;
