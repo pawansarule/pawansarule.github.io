@@ -86,47 +86,74 @@ html {
 }
 
 /* Skills Section Styles */
-#skills {
-  text-align: center;
-  padding: 4em 2em;
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
-}
-
-#skills h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-}
-
-#skills hr {
-  width: 80px;
-  border: 2px solid #8cc9f0;
-  margin: 0 auto 2em auto;
-  border-radius: 3px;
-}
-
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1em;
-  max-width: 900px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .skill-card {
-  background: linear-gradient(135deg, #8cc9f0, #c79cc8);
-  color: white;
-  font-weight: 600;
-  padding: 1.2em;
+  background: #ffffff10;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(10px);
   border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 1em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-card i {
+  display: block;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
 }
 
 .skill-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, #9bb2e1, #efa8b0);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-image: linear-gradient(to right, #ede0ff , #fafbd9);
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .skill-card {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  .skill-card i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.75rem;
+    padding: 0 1rem;
+  }
+
+  .skill-card {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .skill-card i {
+    font-size: 1.3rem;
+  }
 }
 
 .cert-list {
@@ -150,6 +177,7 @@ html {
 .cert-list li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+	background-image: linear-gradient(to right, #ede0ff , #fafbd9);
 }
 
 .cert-icon {
@@ -221,6 +249,7 @@ input, select, textarea {
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+background-image: linear-gradient(to right, #ede0ff , #fafbd9);
 }
 
 .project-image {
